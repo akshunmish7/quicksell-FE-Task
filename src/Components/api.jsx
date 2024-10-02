@@ -66,7 +66,6 @@ function Todos({ setSelectedGrouping, sortBy, setSortBy }) {
     return 0;
   });
 
-  // Grouping by user
   const groupedTickets = {};
   allData.tickets.forEach((ticket) => {
     const userId = ticket.userId;
@@ -76,7 +75,6 @@ function Todos({ setSelectedGrouping, sortBy, setSortBy }) {
     groupedTickets[userId].push(ticket);
   });
 
-  // Grouping by status
   const groupedStatus = {};
   allStatuses.forEach((status) => {
     groupedStatus[status] = allData.tickets.filter(
@@ -84,7 +82,6 @@ function Todos({ setSelectedGrouping, sortBy, setSortBy }) {
     );
   });
 
-  // Grouping by priority
   const groupedPriority = {};
   allData.tickets.forEach((ticket) => {
     const priority = ticket.priority;
@@ -94,7 +91,6 @@ function Todos({ setSelectedGrouping, sortBy, setSortBy }) {
     groupedPriority[priority].push(ticket);
   });
 
-  // Render grouped data based on the selected grouping
   const renderGroupedData = () => {
     switch (selectedGrouping) {
       case 'status':
