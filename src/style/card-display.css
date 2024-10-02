@@ -1,0 +1,235 @@
+.todo{
+    margin: 2rem;
+    width: 20%;
+
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-info{
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.info-about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info-about h1{
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.info-about p{
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    color: rgb(165, 170, 182);
+}
+.info-about img{
+   width: 20px;
+   height: 20px;
+   border-radius: 10rem;
+}
+.info-options i{
+    color: rgb(141, 153, 183);
+    margin-left: 0.5rem;
+}
+
+.todo-task{
+   
+    margin-top: 0.6rem;
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.4rem;
+    background-color: white;
+}
+
+.todo-task img{
+    width: 20px;
+    height: 20px;
+    border-radius: 10rem;
+}
+
+.todo-task-text{
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.todo-task h1{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color:rgb(141, 153, 183);
+}
+
+.todo-task-text i{
+   margin-top: 0.2rem;
+    font-size: 0.6rem;
+}
+
+.todo-task-text p{
+   margin-left: 0.3rem; 
+   color: black;
+   font-size: 0.8rem;
+}
+
+.todo-task-options{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.todo-task-options .fa-ellipsis{
+    padding: 0.1rem 0.2rem;
+    border: 0.25px solid rgb(159, 162, 170);
+    border-radius: 0.2rem;
+    color:rgb(141, 153, 183);
+}
+.todo-task-options-request{
+    border-radius: 0.2rem;
+    margin-left: 0.3rem;
+    display: flex;
+    align-items: center;
+    border: 0.25px solid rgb(159, 162, 170);
+    padding: 0.1rem 0.2rem;
+    color:rgb(141, 153, 183);
+    font-size: 12px;
+}
+.todo-task-options-request i{
+    font-size: 0.7rem;
+    color: #BEC2C7;
+}
+.todo-task-options-request p{
+    font-size: 0.7rem;
+    margin-left: 0.2rem;
+    font-weight: 400;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+}
+.menu-item i{
+    margin-right: 0.8rem;
+    font-size: 0.8rem;
+
+}
+.todo-task-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.todo-task-header img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10rem;
+}
+
+
+.todo-task-header::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 15px; 
+    right: -1px; 
+}
+
+
+@media (max-width: 768px) {
+    .todo {
+      width: 100%;
+    }
+  }
+
+  .priority-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* align-items: center; */
+  }
+  
+  .priority-info {
+    display: flex;
+    align-items: left;
+    gap: 8px; /* Space between the icon, heading, and count */
+  }
+  
+
+  .priority-icons {
+    display: flex;
+    align-items: right;
+    /* gap: 8px; Space between the "+" and "..." icons */
+  }
+  
+  .priority-plus-icon, .priority-ellipsis-icon {
+    width: 16px;  /* Adjust the size as needed */
+    height: 16px;
+    cursor: pointer;  /* Add pointer cursor for interactive icons */
+  }
+  
+  .user-info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between user info and icons */
+    gap: 10px; /* Adjust gap between elements */
+  }
+  
+  .profile-image {
+    width: 16px; /* Make the profile image smaller */
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: start;
+    gap: 8px; /* Space between the name and ticket count */
+  }
+  
+  .user-name {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .ticket-count {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .user-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the icons */
+  }
+  
+  .plus-icon,
+  .ellipsis-icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer; /* Make icons clickable */
+  }
+  
+  .todo-task-options {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust gap between the priority icon and feature request */
+  }
+  .priority-icon-small {
+    width: 16px;
+    height: 16px;
+  }
+  .todo-task-options-request img {
+    width: 10px; /* Set the width of the icon */
+    height: 8px; /* Set the height of the icon */
+    object-fit: contain; /* Ensure the image retains its aspect ratio */
+    margin-right: 5px; /* Add some space between the icon and text */
+    opacity: 0.5;
+  }

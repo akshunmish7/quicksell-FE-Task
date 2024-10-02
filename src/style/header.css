@@ -1,0 +1,199 @@
+/* Navbar styling */
+.navbar {
+  display: flex;
+  background-color: white;
+  height: 50px;
+  align-items: center; /* Ensure vertical centering of contents */
+  padding: 0 15px; /* Add padding for better spacing */
+  border-bottom: 2px solid #F4F5F8; /* Optional: Add bottom border to the navbar */
+}
+
+/* Dropdown container */
+.dropdown-container {
+  border: 2px solid #F4F5F8;
+  display: inline-block;
+  margin: 0 20px; /* Adjusted margins for spacing */
+  border-radius: 5px;
+  position: relative; /* Ensures dropdown positioning within container */
+  transition: border-color 0.3s ease;
+}
+
+/* Dropdown button */
+.dropdown-button {
+  padding: 6px 12px; /* Increase padding for better click area */
+  font-size: 12px; /* Slightly increase font size */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  width: 120px; /* Increased width for better appearance */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between text and icons */
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-button:hover {
+  background-color: #F8F9FB; /* Change background on hover */
+}
+
+/* Hamburger Icon */
+.hamburgerIcon {
+  margin-right: 8px; /* Reduce right margin */
+  width: 18px;
+  height: 18px; /* Set fixed size for the icon */
+}
+
+/* Dropdown chevron icon */
+.dropdownIcon {
+  margin-left: 8px; /* Add space between text and icon */
+  width: 10px;
+  height: 10px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  background-color: #F8F9FB;
+  margin-top: 8px;
+  border: 1px solid #F4F5F8;
+  position: absolute;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+  z-index: 100;
+  border-radius: 5px;
+  padding: 8px; /* Add padding inside the dropdown */
+}
+
+.dropdown-content p {
+  color: rgb(104, 108, 118);
+  margin: 4px 0; /* Margin between items */
+  font-size: 12px; /* Standardize font size */
+}
+
+/* Dropdown row styling */
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  padding: 6px 0;
+}
+
+/* Grouping label */
+.grouping {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Dropdown button for grouping and ordering */
+.dropdown-button-one {
+  padding: 4px 8px; /* Adjust padding for better click area */
+  font-size: 12px;
+  border: 1px solid rgb(180, 183, 192);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-button-one:hover {
+  background-color: #F8F9FB; /* Hover effect */
+}
+
+.innerDropdown {
+  width: 10px;
+  height: 10px;
+  margin-left: 8px; /* Proper spacing for the dropdown icon */
+}
+
+/* Dropdown menu for grouping */
+.userDropdown {
+  position: absolute;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid rgb(180, 183, 192);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  width: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for dropdown */
+  padding: 8px 0;
+}
+
+.userDropdown li {
+  padding: 6px 0; /* Add padding to each item */
+  list-style: none; /* Remove list style */
+  transition: background-color 0.3s ease;
+}
+
+.userDropdown li:hover {
+  background-color: #F4F5F8; /* Hover effect for dropdown items */
+}
+
+/* Priority dropdown styling */
+.priorityDropdown {
+  position: absolute;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid rgb(180, 183, 192);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  width: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 8px 0;
+}
+
+.priorityDropdown li {
+  padding: 6px 0; /* Add padding to each item */
+  list-style: none; /* Remove list style */
+  transition: background-color 0.3s ease;
+}
+
+.priorityDropdown li:hover {
+  background-color: #F4F5F8; /* Hover effect for dropdown items */
+}
+
+/* Media query for responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-container {
+    margin: 10px 0;
+  }
+
+  .dropdown-content,
+  .userDropdown,
+  .priorityDropdown {
+    min-width: 150px; /* Adjust width for smaller screens */
+  }
+
+  .dropdown-button,
+  .dropdown-button-one {
+    width: 100px; /* Adjust button width for smaller screens */
+  }
+}
+.hamburgerIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.dropdownIcon, .innerDropdown {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
